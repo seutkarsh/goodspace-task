@@ -29,4 +29,14 @@ class AppInputDecoration {
       ),
     ),
   );
+
+  static InputDecoration searchBar = phoneField.copyWith(
+      fillColor: Color.fromRGBO(242, 242, 242, 0.4),
+      isDense: true,
+      hintText: "Search Jobs",
+      prefixIcon: Icon(
+        Icons.search_rounded,
+        size: 20,
+        color: AppColors.primary,
+      ));
 }

@@ -17,4 +17,18 @@ class AppTheme {
       border: Border.all(color: AppColors.primary),
     ),
   );
+
+  static BottomNavigationBarThemeData bottomNavigationBarThemeData =
+      BottomNavigationBarThemeData(
+          type: BottomNavigationBarType.fixed,
+          backgroundColor: Colors.white,
+          elevation: 0,
+          showUnselectedLabels: true,
+          showSelectedLabels: true,
+          selectedLabelStyle:
+              GoogleFonts.poppins(color: AppColors.primary, fontSize: 12),
+          unselectedLabelStyle:
+              GoogleFonts.poppins(color: AppColors.gsGrey, fontSize: 12),
+          unselectedIconTheme: IconThemeData(color: AppColors.gsGrey, size: 20),
+          selectedIconTheme: IconThemeData(color: AppColors.primary, size: 20));
 }

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:goodspace/screens/Dashboard/dashboard.dart';
 import 'package:goodspace/screens/SignUp/otp.dart';
 import 'package:goodspace/screens/SignUp/sign_up.dart';
 import 'package:goodspace/screens/SplashScreen/splash_screen.dart';
 import 'package:goodspace/utils/colors.dart';
+import 'package:goodspace/utils/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,6 +32,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: "/otp",
           page: () => const OTP(),
+        ),
+        GetPage(
+          name: "/dashboard",
+          page: () => const Dashboard(),
         )
       ],
       title: 'Goodspace Task',
@@ -38,7 +44,8 @@ class MyApp extends StatelessWidget {
           //     seedColor: Colors.white, background: Colors.white),
           useMaterial3: true,
           dialogBackgroundColor: Colors.white,
-          scaffoldBackgroundColor: Colors.white),
+          scaffoldBackgroundColor: Colors.white,
+          bottomNavigationBarTheme: AppTheme.bottomNavigationBarThemeData),
       home: SplashScreen(),
     );
   }

@@ -204,7 +204,7 @@ class _OTPState extends State<OTP> {
                   text: "Verify Phone",
                   onPressed: () {
                     // print("OTP");
-                    // Get.toNamed("/otp");
+                    Get.offAndToNamed("/dashboard");
                   },
                 )
               ],
